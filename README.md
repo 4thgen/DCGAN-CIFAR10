@@ -37,5 +37,6 @@ A model for cifar10 made by own routine, according to many other implementatons,
 3. using batch normalization with axis=1
 4. using tanh output in generator
 5. not using batch normalization at first and last layer
+6. train generator twice
 
 # Result sample
