@@ -32,7 +32,7 @@ A deep convolutional model for cifar10 made by own routine, according to many ot
 - G: (100, 32, 32, 3) // after deconv2d 5x5 stride 2 and tanh out
 
 # TIPs
-1. using reaky relu in descriminator all layer except last one.
+1. using leaky relu in descriminator all layer except last one.
 2. using different learning rate for dicriminator(1e-3) and generator(1e-4)
 3. using batch normalization with axis=1
 4. using tanh output in generator
