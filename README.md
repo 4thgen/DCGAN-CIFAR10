@@ -41,4 +41,4 @@ A deep convolutional model for cifar10 made by own routine, according to many ot
 
 # Result sample
 generating image result at epoch 100
-![epoch100](https://github.com/4thgen/DCGAN-CIFAR10/blob/master/GAN_epoch100_test_all_classes.png)
+![epoch100](https://github.com/4thgen/DCGAN-CIFAR10/blob/master/result/GAN_epoch100_test_all_classes.png)
