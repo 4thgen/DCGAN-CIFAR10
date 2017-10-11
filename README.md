@@ -40,4 +40,5 @@ A model for cifar10 made by own routine, according to many other implementatons,
 6. train generator twice
 
 # Result sample
+generating image result at epoch 100
 ![epoch100](https://github.com/4thgen/DCGAN-CIFAR10/blob/master/GAN_epoch100_test_all_classes.png)
