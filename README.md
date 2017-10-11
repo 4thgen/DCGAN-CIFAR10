@@ -4,7 +4,7 @@ this code is base on hwalsuklee/tensorflow-generative-model-collections (https:/
 very thanks to @hwalsuklee
 
 # Background
-I tried to make a model for GAN with cifar10, it was different with mnist image set. so the result was not expected enough. maybe color dimension is more complicated factor for generation. 
+I tried to make a model for GAN with cifar10, it was different with mnist image set. so the result was not good enough less than expected. maybe color dimension is more complicated factor for generation. 
 A model for cifar10 made by own routine, according to many other implementatons, websites and blogs. and adding some tips.
 
 # Coding Condition
