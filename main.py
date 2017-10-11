@@ -80,32 +80,32 @@ def main():
         if args.gan_type == 'GAN':
             gan = GAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
                       checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        '''
-        elif args.gan_type == 'CGAN':
-            gan = CGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                       checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'ACGAN':
-            gan = ACGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                        checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'infoGAN':
-            gan = infoGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                          checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'EBGAN':
-            gan = EBGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                        checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'WGAN':
-            gan = WGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                       checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'DRAGAN':
-            gan = DRAGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                       checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'LSGAN':
-            gan = LSGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                         checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        elif args.gan_type == 'BEGAN':
-            gan = BEGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
-                        checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
-        '''
+            '''
+            elif args.gan_type == 'CGAN':
+                gan = CGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                           checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'ACGAN':
+                gan = ACGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                            checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'infoGAN':
+                gan = infoGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                              checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'EBGAN':
+                gan = EBGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                            checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'WGAN':
+                gan = WGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                           checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'DRAGAN':
+                gan = DRAGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                           checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'LSGAN':
+                gan = LSGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                             checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            elif args.gan_type == 'BEGAN':
+                gan = BEGAN(sess, epoch=args.epoch, batch_size=args.batch_size, dataset_name=args.dataset,
+                            checkpoint_dir=args.checkpoint_dir, result_dir=args.result_dir, log_dir=args.log_dir)
+            '''
         else:
             raise Exception("[!] There is no option for " + args.gan_type)
 
