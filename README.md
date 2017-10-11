@@ -1,11 +1,11 @@
 # DCGAN-CIFAR10
-A implementation of DCGAN (Deep Convolutional Generative Adversarial Networks) for CIFAR10 image 
+A implementation of DCGAN (Deep Convolutional Generative Adversarial Networks) for CIFAR10 image. 
 this code is base on hwalsuklee/tensorflow-generative-model-collections (https://github.com/hwalsuklee/tensorflow-generative-model-collections), including some modification.
 very thanks to @hwalsuklee
 
 # Background
-I tried to make a model for GAN with cifar10, it was different with mnist image set. so the result was not good enough less than expected. maybe color dimension is more complicated factor for generation. 
-A model for cifar10 made by own routine, according to many other implementatons, websites and blogs. and adding some tips.
+I tried to make a model for GAN with cifar10, it was different with MNIST image set. so the result was not good enough less than expected. maybe color dimension is more complicated factor for generation. 
+A deep convolutional model for cifar10 made by own routine, according to many other implementatons, websites and blogs. and adding some significant tips.
 
 # Coding Condition
 - python 3.5.2
