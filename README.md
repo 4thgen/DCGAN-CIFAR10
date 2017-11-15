@@ -43,8 +43,8 @@ A deep convolutional model for cifar10 made by own routine, according to many ot
 generating image result at epoch 100
 ![epoch100](https://github.com/4thgen/DCGAN-CIFAR10/blob/master/result/GAN_epoch100_test_all_classes.png)
 
-epoch result image movies  
+epoch result image movies (epoch 0~500)  
 [![Youtude:DCGAN Epoch 000~499 Results](https://img.youtube.com/vi/FQJfQIec70E/0.jpg)](https://www.youtube.com/watch?v=FQJfQIec70E)
 
-evolving generator  
+evolving generator (epoch 0~500)  
 [![Evolution of DCGAN Generator (faster)](https://img.youtube.com/vi/_REVVMWa9aE/0.jpg)](https://www.youtube.com/watch?v=_REVVMWa9aE)
