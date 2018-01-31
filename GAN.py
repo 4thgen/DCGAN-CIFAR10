@@ -108,11 +108,11 @@ class GAN(object):
                 print("D:",x.get_shape()) # 32, 32, 3 = 3072
                 net = lrelu(conv2d(x, 64, 5, 5, 2, 2, name='d_conv1'+'_'+self.dataset_name))
                 print("D:",net.get_shape())
-                net = lrelu(bn(conv2d(net, 128, 5, 5, 2, 2, name='d_conv2'+'_'+self.dataset_name), is_training=is_training, scope='d_bn2',axis=1))
+                net = lrelu(bn(conv2d(net, 128, 5, 5, 2, 2, name='d_conv2'+'_'+self.dataset_name), is_training=is_training, scope='d_bn2',axis=2))
                 print("D:",net.get_shape())
-                net = lrelu(bn(conv2d(net, 256, 5, 5, 2, 2, name='d_conv3'+'_'+self.dataset_name), is_training=is_training, scope='d_bn3',axis=1))
+                net = lrelu(bn(conv2d(net, 256, 5, 5, 2, 2, name='d_conv3'+'_'+self.dataset_name), is_training=is_training, scope='d_bn3',axis=2))
                 print("D:",net.get_shape())
-                net = lrelu(bn(conv2d(net, 512, 5, 5, 2, 2, name='d_conv4'+'_'+self.dataset_name), is_training=is_training, scope='d_bn4',axis=1))
+                net = lrelu(bn(conv2d(net, 512, 5, 5, 2, 2, name='d_conv4'+'_'+self.dataset_name), is_training=is_training, scope='d_bn4',axis=2))
                 print("D:",net.get_shape())
                 net = tf.reshape(net, [self.batch_size, -1])
                 print("D:",net.get_shape())
@@ -153,15 +153,15 @@ class GAN(object):
                     )
                 print("G:",net.get_shape())
                 net = tf.nn.relu(
-                    bn(deconv2d(net, [self.batch_size, h_size_8, h_size_8, 256], 5, 5, 2, 2, name='g_dc2'+'_'+self.dataset_name),is_training=is_training, scope='g_bn2',axis=1)
+                    bn(deconv2d(net, [self.batch_size, h_size_8, h_size_8, 256], 5, 5, 2, 2, name='g_dc2'+'_'+self.dataset_name),is_training=is_training, scope='g_bn2',axis=2)
                     )
                 print("G:",net.get_shape())
                 net = tf.nn.relu(
-                    bn(deconv2d(net, [self.batch_size, h_size_4, h_size_4, 128], 5, 5, 2, 2, name='g_dc3'+'_'+self.dataset_name),is_training=is_training, scope='g_bn3',axis=1)
+                    bn(deconv2d(net, [self.batch_size, h_size_4, h_size_4, 128], 5, 5, 2, 2, name='g_dc3'+'_'+self.dataset_name),is_training=is_training, scope='g_bn3',axis=2)
                     )
                 print("G:",net.get_shape())
                 net = tf.nn.relu(
-                    bn(deconv2d(net, [self.batch_size, h_size_2, h_size_2, 64], 5, 5, 2, 2, name='g_dc4'+'_'+self.dataset_name),is_training=is_training, scope='g_bn4',axis=1)
+                    bn(deconv2d(net, [self.batch_size, h_size_2, h_size_2, 64], 5, 5, 2, 2, name='g_dc4'+'_'+self.dataset_name),is_training=is_training, scope='g_bn4',axis=2)
                     )
                 print("G:",net.get_shape())
                 out = tf.nn.tanh(
