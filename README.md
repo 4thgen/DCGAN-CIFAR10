@@ -34,7 +34,7 @@ A deep convolutional model for cifar10 made by own routine, according to many ot
 # TIPs
 1. using leaky relu in descriminator all layer except last one.
 2. using different learning rate for dicriminator(1e-3) and generator(1e-4)
-3. using batch normalization with axis=1
+3. using batch normalization with axis="channel index"
 4. using tanh output in generator
 5. not using batch normalization at first and last layer
 6. train discriminator once and generator twice
